@@ -1,0 +1,17 @@
+<div class="flex flex-col items-center justify-center p-6 text-center text-gray-600">
+  <svg class="w-16 h-16 text-gray-400 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M9 17v-6h6v6h4V9l-7-5-7 5v8h4z" />
+  </svg>
+
+  <h2 class="text-xl font-semibold">{{ title() }}</h2>
+  <p class="mt-2 text-gray-500">{{ description() }}</p>
+
+  @if (actionLabel()) {
+    <button
+      class="mt-4 px-4 py-2 rounded-lg bg-blue-600 text-white hover:bg-blue-700">
+      {{ actionLabel() }}
+    </button>
+  }
+</div>
+
